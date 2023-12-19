@@ -7,13 +7,31 @@ body{
 }
 
 #innerCirc {
-    -webkit-animation: spin 1s linear; 
-    animation: none}
+    /* -webkit-animation: spin 1s linear;  */
+    animation: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinReverse {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+};
     
     
-  
+/*   
   /* for Safari browser  */
-  @-webkit-keyframes spin {
+  /* @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); 
-    }
+    } */ */
