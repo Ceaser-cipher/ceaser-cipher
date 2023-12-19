@@ -1,7 +1,8 @@
 const array = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 const inputElement = document.getElementById("input")
 const keyElement = document.getElementById("keyInput")
-let encode = document.getElementById("encode")
+let encode = document.getElementById("encode");
+let decode = document.getElementById("decode");
 let checked = true;
 const output = document.getElementById("output")
 
@@ -72,6 +73,16 @@ function cipherDecode(){
 }
 
 const innerCirc = document.getElementById("innerCirc")
+
+  encode.addEventListener("click", function () {
+  innerCirc.style.animation = "none";
+  innerCirc.style.animation = "spin 1s linear";
+  });
+  
+  decode.addEventListener("click", function () {
+  innerCirc.style.animation = "none";
+  innerCirc.style.animation = "spinReverse 1s linear";
+  });
 
 // function spinWheel(){
 
